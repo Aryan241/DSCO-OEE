@@ -1,0 +1,16 @@
+VCD info: dumpfile bcd_alu_xs3.vcd opened for output.
+---- Directed cases ----
+ 10 ns  m=0  A=3 B=4 | sign=0 tens=0000 units=0111 | XS3=0011 1010 | err=0
+ 20 ns  m=0  A=7 B=5 | sign=0 tens=0001 units=0010 | XS3=0100 0101 | err=0
+ 30 ns  m=0  A=8 B=8 | sign=0 tens=0001 units=0110 | XS3=0100 1001 | err=0
+ 40 ns  m=0  A=9 B=9 | sign=0 tens=0001 units=1000 | XS3=0100 1011 | err=0
+ 50 ns  m=1  A=8 B=3 | sign=0 tens=0000 units=0101 | XS3=0011 1000 | err=0
+ 60 ns  m=1  A=2 B=7 | sign=1 tens=0000 units=0101 | XS3=0011 1000 | err=0
+ 70 ns  m=1  A=5 B=5 | sign=0 tens=0000 units=0000 | XS3=0011 0011 | err=0
+ 80 ns  m=0  A=0 B=0 | sign=0 tens=0000 units=0000 | XS3=0011 0011 | err=0
+ 90 ns  m=0  A=12 B=3 | sign=0 tens=0000 units=0000 | XS3=0000 0000 | err=1
+100 ns  m=1  A=4 B=10 | sign=0 tens=0000 units=0000 | XS3=0000 0000 | err=1
+Directed result: 10 passed, 0 failed
+---- Exhaustive sweep (16 x 16 x 2) ----
+Exhaustive result: 512 passed, 0 failed (200 valid, 312 invalid)
+tb_bcd_alu_xs3.v:80: $finish called at 5220000 (1ps)
